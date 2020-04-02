@@ -2,9 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="jquery.range.css">
+    <title>Test</title>
 </head>
 <body>
+<div class="mobile-menu">
+    <a href="#" class="menu-btn">
+        <span></span>
+    </a>
+</div>
 
+
+<div class="mobile-menu__menu-header-wrap">
+    <div class="menu-logo-container">
+        <div class="menu-logo"></div>
+    </div>
+    <ul class="mobile-menu__menu-header-text">
+        <li><a href="#anch1" class="menu-link">Личная информация</a></li>
+        <li><a href="#anch2" class="menu-link">Опыт</a></li>
+        <li><a href="#anch3" class="menu-link">JavaScript</a></li>
+        <li><a href="#anch4" class="menu-link">О себе</a></li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+    <div class="header">
+    <div class="menu-header main-grid">
+        <div class="menu-header-content">
+
+            <div class="menu-header-wrap">
+
+
+                <ul class="menu-header-text">
+                    <li><a href="#anch1" class="menu-link">Личная информация</a></li>
+                    <li><a href="#anch2" class="menu-link">Опыт</a></li>
+                    <li><a href="#anch3" class="menu-link">JavaScript</a></li>
+                    <li><a href="#anch4" class="menu-link">О себе</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    </div>
+    <div class="profileInfoMain" id="anch1">
+    <div class="profileName">Анкета</div>
+    <div class="profileForm">
+        <div class="profileFormLogo"></div>
+        <div class="profileFormTittle">
+            Личная информация
+        </div>
+        <div class="profileFormInputs">
+            <form>
+                <p><input name="secondName" placeholder="ФИО" id="secondName"></p>
+
+                <div class="block">
+                    <div class="placeholder" data-text="Год рождения"></div>
+                    <select id="selectForm">
+                        <option value="" disabled selected>Год рождения</option>
+                        <option value="hurr">1999</option>
+                        <option value="hurr">1998</option>
+                        <option value="hurr">1997</option>
+                        <option value="hurr">1996</option>
+                        <option value="hurr">1995</option>
+                        <option value="hurr">1994</option>
+                        <option value="hurr">1993</option>
+                        <option value="hurr">1992</option>
+                        <option value="hurr">1991</option>
+                        <option value="hurr">1990</option>
+                    </select>
+                </div>
+                <p><input name="home" type="home" placeholder="Место проживания" id="home"></p>
+                <p><input name="skype" type="password" placeholder="Skype" id="skype"></p>
+                <p><input name="mail" type="mail" placeholder="E-mail" id="mail"></p>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="profileExperience" id="anch2">
+        <div class="profileExperienceContent main-grid">
+        <div class="profileExperienceLogo"></div>
+        <div class="profileExperienceName">Расскажите о своем опыте</div>
+
+    </div>
+        <div class="profileExperienceCheckboxContainter">
+            <div class="profileExperienceCheckboxContainterRow1 flexRow">
+            <div class="choises">
+                <input type="checkbox" id="area1" class="checkbox">
+                <label for="area1"> БЭМ/OOCSS</label>
+            </div>
+            <div class="choises">
+                <input type="checkbox" id="area2" class="checkbox">
+                <label for="area2">Stylus/LESS/SASS</label>
+            </div>
+            <div class="choises">
+                <input type="checkbox" id="area3" class="checkbox">
+                <label for="area3">Работаю с SVG</label>
+            </div>
+
+            </div>
+
+
+
+            <div class="profileExperienceCheckboxContainterRow2 flexRow">
+            <div class="choises">
+                <input type="checkbox" id="area4" class="checkbox">
+                <label for="area4">Верстаю семантично</label>
+            </div>
+            <div class="choises">
+                <input type="checkbox" id="area5" class="checkbox">
+                <label for="area5">ES2015/ES2016</label>
+            </div>
+            <div class="choises">
+                <input type="checkbox" id="area6"  class="checkbox">
+                <label for="area6">Gulp/GRUNT</label>
+            </div>
+
+
+            </div>
+
+            <div class="profileExperienceCheckboxContainterRow3 flexRow">
+            <div class="choises">
+                <input type="checkbox" id="area7" class="checkbox">
+                <label for="area7">Webpack</label>
+            </div>
+            <div class="choises">
+                <input type="checkbox" id="area8" class="checkbox">
+                <label for="area8">jQuery</label>
+            </div>
+            <div class="choises">
+                <input type="checkbox" id="area9"  class="checkbox">
+                <label for="area9">Ипользую Git</label>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="profileJs" id="anch3">
+        <div class="profileJsContent">
+            <div class="profileJsContentLogo"></div>
+            <div class="profileJsContentName">Уровень владения JavaScript</div>
+            <div class="profileJsContentSlider">
+                <div class="range">
+                        <input type="range" min="1" max="7" steps="1" value="1">
+                </div>
+
+                <ul class="range-labels">
+                    <li class="active selected" id="firstRange">Не владею</li>
+                    <li >Использую готовые<br>
+                        решения</li>
+                    <li class="invis">3 days</li>
+                    <li id="threeRange">Использую готовые решения<br>
+                        и умею и переделывать</li>
+                    <li class="invis">5 days</li>
+                    <li class="invis">6 days</li>
+                    <li>Пишу сложный JS с нуля</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="profileAbout" id="anch4">
+        <div class="profileAboutContent">
+            <div class="profileAboutContentLogo"></div>
+            <div class="profileAboutContentName">Расскажите о себе</div>
+            <div class="profileAboutContentDesc">Напишите несколько предложений, чем привлекла наша вакансия
+                и что вы ожидаете от работы у нас.
+            </div>
+            <p class="areaDesc"><textarea name="description" placeholder="Понравилась тем, что..." cols="40" rows="5"></textarea></p>
+            <button class="formButton"><a>Готово</a></button>
+        </div>
+    </div>
+</div>
+</div>
+<script src="jquery.range.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
